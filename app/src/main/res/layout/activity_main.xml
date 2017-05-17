@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3EC5FF"
+    tools:context="com.hanrui.android.puzzle.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_puzzle_main_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dip"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择难度 : "
+            android:textSize="24dp"
+            android:textColor="#FFFFFF"
+            />
+        <TextView
+            android:id="@+id/tv_puzzle_main_type_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2×2"
+            android:textSize="24dp"
+            android:textColor="#FFFFFF"
+            />
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gv_puzzle_main_pic_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_puzzle_main_spinner"
+        android:numColumns="4"
+        android:verticalSpacing="8dp">
+
+    </GridView>
+
+</RelativeLayout>
